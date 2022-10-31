@@ -54,3 +54,8 @@ OR
 * ```curl http://localhost:3000```
 * ```curl http://localhost:3000/info```
 * ```curl http://localhost:3000/release```
+
+
+# Resources
+---
+* [YouTube Tutorial](https://www.youtube.com/watch?v=yEMbfK6f3aw&t=967s)
