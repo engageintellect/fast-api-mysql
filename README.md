@@ -28,7 +28,7 @@ cd fast_api && sudo pip install -r requirements.txt
 	* Create a local MySQL database called "py_crud"
 
 	* Create a table like this one:
-	```
+	```sql
 	CREATE TABLE releases(  
 		id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
 		date VARCHAR(255),
