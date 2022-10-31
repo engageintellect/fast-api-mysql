@@ -1,5 +1,4 @@
 # Fast API Demo
----
 
 ## Description:
 FastAPI framework, high performance, easy to learn, fast to code, ready for production
@@ -57,5 +56,4 @@ OR
 
 
 # Resources
----
 * [YouTube Tutorial](https://www.youtube.com/watch?v=yEMbfK6f3aw&t=967s)
