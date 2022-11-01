@@ -24,6 +24,20 @@ git clone <repo name>
 cd fast_api && sudo pip install -r requirements.txt
 ```
 
+3. Setup MySQL
+	* Create a local MySQL database called "py_crud"
+
+	* Create a table like this one:
+	```sql
+	CREATE TABLE releases(  
+		id int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT 'Primary Key',
+		date VARCHAR(255),
+		title VARCHAR(255),
+		description VARCHAR(255),
+		link VARCHAR(255),
+	) COMMENT '';
+	```
+
 3. run code (dev)
 ```
 uvicorn main:app --reload
@@ -52,6 +66,26 @@ OR
 * ```curl http://localhost:3000```
 * ```curl http://localhost:3000/info```
 * ```curl http://localhost:3000/release```
+
+
+# Sending data externally using Python.
+```python
+
+import requests
+ 
+url = "https://httpbin.org/post"
+ 
+data = {
+    'date': 'date',
+    'title': 'title',
+    'description': 'desc',
+    'link': 'link',
+}
+ 
+response = requests.post(url, json=data)
+ 
+print(f'Status: {response.status_code}\n Response: {response.json()}')
+```
 
 
 # Resources
