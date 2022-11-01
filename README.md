@@ -67,6 +67,11 @@ OR
 * ```curl http://localhost:3000/info```
 * ```curl http://localhost:3000/release```
 
+5. Additionally, FastAPI is self-documenting. You can access this by appending 'docs' to the end of an endpoint:
+```
+http://localhost:3000/docs
+```
+
 
 # Sending data externally using Python.
 ```python
